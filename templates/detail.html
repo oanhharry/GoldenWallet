@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% include 'meta-data.html' %}
+    <title>Phân tích</title>
+  </head>
+  <body>
+    {% include 'homepage/header.html' %}
+    <p class="text-center font-weight-bold font-size-30px pt-50px">Phân tích chi tiêu</p>
+    {% include 'analysis/analysis.html' %}
+    <p class="text-center font-size-20px">Như vậy, bạn cần phân chia các khoản chi theo nhóm:</p>
+    {% include 'analysis/package.html' %}
+    <p class="font-italic text-center pb-50px">Lưu ý: Có thể thay đổi tỷ trọng các khoản chi tiêu nhưng tổng các tỷ lệ phải bằng 1</p>
+    {% include 'homepage/footer.html' %}
+  </body>
+</html>

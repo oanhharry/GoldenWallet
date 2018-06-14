@@ -1,0 +1,51 @@
+<div class="d-flex center  mtb-30">
+  <form class="w-85" method="post">
+    <div class="d-flex justify-content-around">
+
+      <div class="w-15 h-255">
+        <div class=" h-255 bg-bag-money">
+            <p class="pt-200px text-center font-weight-bold text-red" >NHU CẦU THIẾT YẾU</p>
+        </div>
+        <input type="number" step="0.01" class="form-control text-right" placeholder="65%" name="n1" value="0.65">
+      </div>
+
+      <div class="w-15 h-255">
+        <div class=" h-255 bg-bag-money">
+            <p class="pt-200px text-center font-weight-bold text-red" >GIÁO DỤC ĐÀO TẠO</p>
+        </div>
+        <input type="number" step="0.01" class="form-control text-right" placeholder="10%" name="n2" value="0.1">
+      </div>
+
+
+      <div class="w-15 h-255">
+        <div class="h-255 bg-bag-money">
+          <p class="pt-200px text-center font-weight-bold text-red" >HƯỞNG THỤ</p>
+        </div>
+        <input type="number" step="0.01" class="form-control text-right" placeholder="10%" name="n3" value="0.1">
+      </div>
+
+      <div class="w-15 h-255">
+        <div class="h-255 bg-bag-money">
+          <p class="pt-200px text-center font-weight-bold text-red" >TỪ THIỆN</p>
+        </div>
+        <input type="number" step="0.01" class="form-control text-right" placeholder="5%" name="n4" value="0.05">
+      </div>
+
+      <div class="w-15 h-255">
+        <div class="h-255 bg-bag-money">
+          <p class="pt-200px text-center font-weight-bold text-red" >ĐẦU TƯ</p>
+        </div>
+        <input type="number" step="0.01" class="form-control text-right" placeholder="10%" name="n5" value="0.1">
+      </div>
+
+    </div>
+    {% if error == 1 %}
+    <div class=" d-flex center mt-65">
+      <font color="red" size="3" class="mr-40">Nhập lỗi</font>
+    </div>
+    {% endif %}
+    <div class=" d-flex center mt-65">
+      <button class="btn bg-red text-white" type="submit">Xem kết quả</button>
+    </div>
+  </form>
+</div>

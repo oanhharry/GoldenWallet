@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+    {% include 'meta-data.html' %}
+    <title>Kết quả</title>
+  </head>
+  <body>
+    {% include 'homepage/header.html' %}
+    {% include 'result/result.html' %}
+    <div class="d-flex center">
+      <a href="{{url_for('analysis')}}">
+        <button class="btn bg-red text-white" type="button">Phân tích chi tiêu theo tháng</button>
+      </a>
+    </div>
+    <br>
+    <br>
+    {% include 'homepage/footer.html' %}  
+  </body>
+</html>

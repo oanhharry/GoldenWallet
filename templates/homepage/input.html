@@ -1,0 +1,42 @@
+<div class="center d-flex flex-column mtb-30">
+  <p class="text-center font-size-30px cl-xam ">Lập kế hoạch tài chính cho tương lai </p>
+  <form class="col-md-6" method="post">
+    <div class="form-group cl-xam">
+      <label >Thu nhập mỗi tháng</label>
+      <input type="number" class="form-control text-right" placeholder="triệu đồng" name="income" value="">
+    </div>
+    <div class="form-group cl-xam">
+      <label >Mục tiêu tiết kiệm</label>
+      <input type="number" class="form-control text-right" placeholder="triệu đồng" name="goal" value="">
+    </div>
+    <div class="form-group cl-xam ">
+      <label>Bạn muốn đạt mục tiêu sau bao lâu</label>
+      <input type="number" class="form-control text-right" placeholder="tháng" name="month" value="">
+    </div>
+    <div class="form-group cl-xam ">
+      <label>Số tiền TỐI ĐA có thể tiết kiệm mỗi tháng</label>
+      <input type="number" class="form-control text-right" placeholder="triệu đồng" name="max" value="">
+    </div>
+    <div class="form-group cl-xam">
+      <label>Chọn ngân hàng muốn gửi</label>
+      <select type="number" class="form-control text-right" name="bank" value="">
+        <option value="0.035">Agirbank - Lãi suất 3.5%/năm</option>
+        <option value="0.03">Vietcombank - Lãi suất 3%/năm</option>
+        <option value="0.04">BIDV - Lãi suất 4%/năm</option>
+        <option value="0.055">TPbank - Lãi suất 5.5%/năm</option>
+      </select>
+    </div>
+    {% if error == 1 %}
+    <font color="red" size="3">Không được để ô trống. Bạn cần trả lời hết các câu hỏi</font>
+    {% elif error == 2 %}
+    <font color="red" size="3">Số tiền cần tiết kiệm mỗi tháng lớn hơn khả năng tiết kiệm của bạn. Nên kéo dài thời gian hoặc tăng khả năng tiết kiệm mỗi tháng</font>
+    {% elif error == 3 %}
+    <font color="red" size="3"> Không hợp lệ. Khả năng tiết kiệm mỗi tháng cao hơn cả thu nhập. Bạn cần nhập lại </font>
+
+
+    {% endif %}
+    <div class=" d-flex justify-content-end mt-20">
+      <button class="btn bg-red text-white" type="submit">Xem kết quả</button>
+    </div>
+  </form>
+</div>
